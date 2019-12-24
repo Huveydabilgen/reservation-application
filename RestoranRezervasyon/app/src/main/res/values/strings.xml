@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RestoranRezervasyon</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>

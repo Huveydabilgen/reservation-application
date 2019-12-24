@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonTarihSec"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:text="..."
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTarih"
+        app:layout_constraintStart_toEndOf="@+id/editTextTarih"
+        app:layout_constraintTop_toTopOf="@+id/editTextTarih"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Rezervasyon Ekranı"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTarih"
+        android:layout_width="222dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Tarih"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonSaatSec"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:text="..."
+        app:layout_constraintBottom_toBottomOf="@+id/editTextSaat"
+        app:layout_constraintStart_toEndOf="@+id/editTextSaat"
+        app:layout_constraintTop_toTopOf="@+id/editTextSaat" />
+
+    <EditText
+        android:id="@+id/editTextSaat"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Saat"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTarih"
+        app:layout_constraintStart_toStartOf="@+id/editTextTarih"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTarih" />
+
+    <TextView
+        android:id="@+id/textViewKisiSayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="0"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSaat" />
+
+    <ImageButton
+        android:id="@+id/imageButtonKisiEksilt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewKisiSayisi"
+        app:layout_constraintEnd_toStartOf="@+id/textViewKisiSayisi"
+        app:layout_constraintTop_toTopOf="@+id/textViewKisiSayisi"
+        app:srcCompat="@drawable/mdtp_ic_chevron_left_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonKisiArtir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewKisiSayisi"
+        app:layout_constraintStart_toEndOf="@+id/textViewKisiSayisi"
+        app:layout_constraintTop_toTopOf="@+id/textViewKisiSayisi"
+        app:srcCompat="@drawable/mdtp_ic_chevron_right_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Kişi Sayısı"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKisiSayisi"
+        app:layout_constraintEnd_toEndOf="@+id/textViewKisiSayisi"
+        app:layout_constraintStart_toStartOf="@+id/textViewKisiSayisi" />
+
+    <Button
+        android:id="@+id/buttonMasaSecimi"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="32dp"
+        android:text="Masa Seçimi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonKisiArtir"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonKisiEksilt" />
+
+    <TextView
+        android:id="@+id/textViewAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
